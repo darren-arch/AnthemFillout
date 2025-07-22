@@ -1,4 +1,5 @@
 import easyocr #pytesseract #pyautogui, keyboard
+import pyautogui
 import pandas as pd
 import numpy as np
 
@@ -9,13 +10,15 @@ import matplotlib.pyplot as plt
 import matplotlib.cbook as cbook
 from PIL import Image
 
-img_fn = glob('/home/darren/Documents/projects/AnthemFillout/Example*')
+pyautogui.screenshot("screen.png", region=(100,100, 700, 700))
 
-reader = easyocr.Reader(['en'], gpu = False)
+# img_fn = glob('/home/darren/Documents/projects/AnthemFillout/Example*')
 
-results = reader.readtext(img_fn[0])
+# reader = easyocr.Reader(['en'], gpu = False)
 
-print(pd.DataFrame(results))
+# results = reader.readtext(img_fn[0])
+
+# print(pd.DataFrame(results))
 
 #print(img_fn[0])
 
