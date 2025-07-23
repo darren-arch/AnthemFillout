@@ -12,6 +12,8 @@ from PIL import Image
 
 pyautogui.screenshot("screen.png", region=(100,100, 700, 700))
 
+#added to debian
+
 # img_fn = glob('/home/darren/Documents/projects/AnthemFillout/Example*')
 
 # reader = easyocr.Reader(['en'], gpu = False)
